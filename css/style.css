@@ -8,10 +8,7 @@ after{
 
 body{
     color: #fff;
-}
-
-.header{
-    
+    min-height: 1000vh;
     background-color: #000;
     background-image: url('/img/download.png');
     background-repeat: no-repeat;
@@ -20,19 +17,23 @@ body{
     background-attachment: fixed;
 }
 
-.header::after{
+body::after{
     content: "";
     position: absolute;
     width: 100%;
-    height: 300vh;
+    height: 1000vh;
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,0.55);
 }
 
-.container{
+.containers{
     position: relative;
     z-index: 1;
+}
+
+.header{
+    margin-bottom: 300px;
 }
 
 /* NAVBAR */
@@ -47,7 +48,7 @@ body{
 }
 
 
-.nav{
+.nav1{
     width: 90%;
     height: 5%;
     display: flex;
@@ -56,31 +57,32 @@ body{
     margin: 0 auto;
     padding: 30px 0;
     background-color: #000;
+    
 }
 
-.nav__row{
+.nav1__row{
     display: flex;
     width: 550px;
     justify-content: space-around;
     font-size: 20px;
 }
 
-.navbar{
+.navbar1{
     margin-right: 40px;
 }
 
-.navbar__btn{
+.navbar1__btn{
     text-decoration: none;
     color: #fff;
     margin-right: 10px;
     transition: color .2s;
 }
 
-.navbar__btn:hover{
+.navbar1__btn:hover{
     color: #fce38a;
 }
 
-.navbar__link{
+.navbar1__link{
     text-decoration: none;
     color: #fff;
     margin-right: .6em;
@@ -115,11 +117,20 @@ body{
 .footer{
     display: flex;
     flex-direction: column;
-    margin-top: 15rem;
+    margin-top: 14rem;
     text-align: center;
 }
 
 /* ABOUT */
+
+#about{
+    font-weight: 400;
+}
+
+.title__text{
+    font-size: 5.5rem;
+    font-weight: 700;
+}
 
 .title__p{
     font-size: 1.5rem;
@@ -141,10 +152,12 @@ body{
     margin: 0 auto;
 }
 
+/* SLIDER GOALS */
+
 .goals{
     width: 80%;
     margin: 400px auto 0;
-    height: 350px;
+    height: 400px;
     background-color: #FEFF86;
     color: #000;
     text-align: center;
@@ -166,18 +179,163 @@ body{
     margin-bottom: 20px;
 }
 
-.left{
-    font-size: 25px;
+.topper{
     position: relative;
-    bottom: 7.813rem;
-    right: 34.375rem;
-    cursor: pointer;
+    bottom: 3rem;
+    color: #000;
 }
 
-.right{
-    font-size: 25px;
-    position: relative;
-    bottom: 7.813rem;
-    left: 33.75rem;
-    cursor: pointer;
+/* TEAM */
+
+.team__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin-top: 250px;
 }
+
+.team__title::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    top: 150px;
+    right: 1000px;
+    background-color: #fce38a;
+}
+
+.team__row{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.team__man{
+    background-color: rgb(46, 45, 45);
+}
+
+.team__text{
+    padding: 30px 0 0 20px;
+}
+
+.team__name{
+    margin-bottom: 25px;
+}
+
+.team__p{
+    width: 500px;
+    font-size: 20px;
+}
+
+.team__links{
+    width: 250px;
+    padding: 10px 0 0 20px;
+}
+
+.team__icons{
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.fi{
+    font-size: 1.5rem;
+}
+
+/* NEWS */
+
+.news{
+    width: 900px;
+    margin: 0 auto;
+    background-color: #000;
+    margin-top: 150px;
+    padding-bottom: 40px;
+}
+
+.news__post{
+    margin-left: 25px;
+    padding: 25px;
+    text-align-last: left;
+}
+
+.news__pics{
+    width: 400px;
+}
+
+.news__content{
+    border-top: 1px solid rgb(172, 171, 171);
+    border-right: 1px solid rgb(172, 171, 171);
+    border-bottom: 1px solid rgb(172, 171, 171);
+    padding: 15px 0 0 0;
+}
+
+.news__row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto 30px;
+}
+
+.news__profile{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile{
+    display: flex;
+}
+
+.info__icon{
+    text-decoration: none;
+    color: #fff;
+}
+
+.profile__pic{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.news__text{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.news__title{
+    margin: 14px 5px 10px 0;
+}
+
+.news__p{
+    font-size: 15px;
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 15px;    
+}
+
+.news__respond{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.news__comment{
+    font-size: 10px;
+}
+
+.fi-rs-heart{
+    font-size: 15px;
+    color: red;
+}
+
+

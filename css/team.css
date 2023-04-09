@@ -19,8 +19,7 @@ body{
     background-color: #000;
 }
 
-
-.nav{
+.nav1{
     width: 90%;
     height: 5%;
     display: flex;
@@ -31,29 +30,29 @@ body{
     background-color: #000;
 }
 
-.nav__row{
+.nav1__row{
     display: flex;
     width: 550px;
     justify-content: space-around;
     font-size: 20px;
 }
 
-.navbar{
+.navbar1{
     margin-right: 40px;
 }
 
-.navbar__btn{
+.navbar1__btn{
     text-decoration: none;
     color: #fff;
     margin-right: 10px;
     transition: color .2s;
 }
 
-.navbar__btn:hover{
+.navbar1__btn:hover{
     color: #fce38a;
 }
 
-.navbar__link{
+.navbar1__link{
     text-decoration: none;
     color: #fff;
     margin-right: .6em;
