@@ -200,7 +200,7 @@ body::after{
     height: 3px;
     position: absolute;
     top: 150px;
-    right: 1000px;
+    right: 745px;
     background-color: #fce38a;
 }
 
@@ -258,7 +258,7 @@ body::after{
 .news__post{
     margin-left: 25px;
     padding: 25px;
-    text-align-last: left;
+    text-align: left;
 }
 
 .news__pics{
@@ -339,3 +339,50 @@ hr{
 }
 
 
+/* SERVICES */
+
+.service{
+    display: flex;
+    flex-direction: column;
+}
+
+.service__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin-top: 250px;
+}
+
+.service__row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+
+
+.service__block{
+    text-align: center;
+}
+
+.service__img{
+    width: 300px;
+}
+
+.service__text{
+    color: #fce38a;
+    margin: 10px;
+}
+
+.service__p{
+    width: 250px;
+    margin: 0 auto;
+}
+
+.service__btn{
+    padding: 10px 20px;     
+    margin: 50px auto 0;
+    background-color: #fce38a;
+    text-decoration: none;
+    color: #000;
+}
