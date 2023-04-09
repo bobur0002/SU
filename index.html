@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
 
         <div class="containers">
             <div class="nav1">
@@ -34,12 +34,12 @@
                 </div>
                 <div class="nav1__row">
                     <div class="navbar1">
-                        <a class="navbar1__btn" href="">Home</a>
+                        <a class="navbar1__btn" href="#home">Home</a>
                         <a class="navbar1__btn" href="#about">About</a>
                         <a class="navbar1__btn" href="#team">Team</a>
                         <a class="navbar1__btn" href="#news">News</a>
                         <a class="navbar1__btn" href="#service">Clubs</a>
-                        <a class="navbar1__btn" href="">Contact</a>
+                        <a class="navbar1__btn" href="#contact">Contact</a>
                     </div>
                     <div class="navbar1__link">
                         <a class="navbar1__link" href="" target="_blank"><i class="fi fi-brands-facebook"></i></a>
@@ -400,9 +400,75 @@
 
         </div>
     </main>
-    <footer class="footer">
-        ©2023 by TUIT SU community
-    </footer>
+
+    <main>
+        <div class="containers" id="contact">
+            <div class="contact__title">CONTACT US</div>
+            <div class="contact">
+                <h2 class="contact__text">Let's Plan Your Next Event</h2>
+
+                <div class="contacts">
+                    <div class="contact__row">
+                        <h6 class="contact__type">Phone</h6>
+                        <p class="contact__info">123-45-67</p>
+                    </div>
+                    <div class="contact__row">
+                        <h6 class="contact__type">Address</h6>
+                        <p class="contact__info">500 Terry Francine St. SF, CA 9415</p>
+                    </div>
+                    <div class="contact__row">
+                        <h6 class="contact__type">Mail</h6>
+                        <p class="contact__info">info@mysite.com</p>
+                    </div>
+                </div>
+
+                <div class="contact__block">
+
+                    <div class="block__row">
+                        <div class="block">
+                            <div class="block__name">First Name</div>
+                            <input class="block__input" type="text" id="name" name="name" required
+                            minlength="3" maxlength="8" size="10"> 
+                        </div>
+                        <div class="block">
+                            <div class="block__name">Second Name</div>
+                            <input class="block__input" type="text" id="name" name="name" required
+                            minlength="3" maxlength="12" size="10"> 
+                        </div>
+                    </div>
+
+                    <div class="block__row">
+                        <div class="block">
+                            <div class="block__name">Email</div>
+                            <input class="block__input" type="email" id="name" name="name" required
+                            minlength="3" maxlength="8" size="10"> 
+                        </div>
+                        <div class="block">
+                            <div class="block__name">Subject</div>
+                            <input class="block__input" type="text" id="name" name="name" required
+                            minlength="3" maxlength="12" size="10"> 
+                        </div>
+                    </div>
+
+                    <div class="block__comment">
+                        <textarea class="input__comment" placeholder="Leave us message..." maxlength="120" cols="30" rows="3"></textarea>
+                        <a class="input__btn" href="">Submit</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11982.102024427275!2d69.2867291!3d41.3409302!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b534175ed31%3A0x52a8f9d9414a2ad8!2sTUIT!5e0!3m2!1sen!2s!4v1681031430458!5m2!1sen!2s" width="1370" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+            </div>
+
+        </div>
+    </main>
+    <div class="containers">
+
+        <footer class="footer">
+            ©2023 by TUIT SU community
+        </footer>
+    </div>
 
 </body>
 

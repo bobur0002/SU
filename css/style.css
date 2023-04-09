@@ -8,7 +8,7 @@ after{
 
 body{
     color: #fff;
-    min-height: 1200vh;
+    min-height: 1270vh;
     background-color: #000;
     background-image: url('/img/download.png');
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body::after{
     content: "";
     position: absolute;
     width: 100%;
-    height: 1200vh;
+    height: 1294vh;
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,0.55);
@@ -112,15 +112,6 @@ body::after{
 
 .subtitle__btn:hover{
     background-color: #FEFF86;
-}
-
-/* FOOTER */
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 14rem;
-    text-align: center;
 }
 
 /* ABOUT */
@@ -440,3 +431,117 @@ hr{
     color: #fce38e;
 }
 
+/* CONTACT */
+
+.contact__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin-top: 250px;  
+    margin-bottom: 100px;
+}
+
+.contact{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.55);
+    text-align: center;
+    padding: 0 0 40px;
+}
+
+.contact__text{
+    padding: 25px 0;
+}
+
+.contacts{
+    display: flex;
+    width: 60%; 
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.contact__type{
+    color: #fce38e;
+    font-size: 1.3rem;
+}
+
+.contact__block{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block__row{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin: 0 auto 30px;
+}
+
+.block__name{
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.block__input{
+    width: 250px;
+    padding: 4px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgb(172, 171, 171);
+}
+
+.block__message{
+    margin: 20px;
+}
+
+.block__comment{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0;
+}
+
+.input__comment{
+    background-color: transparent;
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    resize: none;
+    border: 1px solid rgb(172, 171, 171);
+}
+
+textarea::placeholder{
+    color: #fff;
+}
+
+.input__btn{
+    text-decoration: none;
+    background-color: #fce38e;
+    color: #000;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+.input__btn:hover{
+    background-color: #f9e9b1;
+}
+
+/* MAP */
+
+.map{
+    text-align: center;
+    filter: grayscale(100%) invert(95%);
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    text-align: center;
+}
